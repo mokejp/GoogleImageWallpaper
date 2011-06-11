@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Internet Wallpaper</string>
+    <string name="gilw_settings">Settings</string>
+    <string name="gilw_settings_keyword">Keywords</string>
+    <string name="gilw_settings_width">Image width</string>
+    <string name="gilw_settings_height">Image height</string>
+    <string name="gilw_settings_safe">SafeSearch</string>
+    <string-array name="gilw_settings_list_safe">
+        <item>"Off"</item>
+        <item>"Moderate(recommended)"</item>
+        <item>"Strict"</item>
+    </string-array>
+    <string-array name="gilw_settings_list_safe_value">
+        <item>"off"</item>
+        <item>"moderate"</item>
+        <item>"active"</item>
+    </string-array>
+    <string name="gilw_settings_default_auto">Auto</string>
+    <string name="gilw_settings_default_keyword">landscape</string>
+    <string name="gilw_settings_message_isempty"></string>
+    <string name="gilw_message_isempty">Not found !</string>
+</resources>

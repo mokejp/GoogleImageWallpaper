@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/gilw_settings"
+        android:key="gilw_settings">
+	<EditTextPreference
+            android:key="gilw_keyword"
+            android:title="@string/gilw_settings_keyword"
+            android:persistent="true"
+            android:hint="@string/gilw_settings_message_isempty"
+            android:defaultValue="@string/gilw_settings_default_keyword"
+            android:inputType="textAutoComplete" />
+    <EditTextPreference
+            android:key="gilw_width"
+            android:title="@string/gilw_settings_width"
+            android:persistent="true"
+            android:hint="@string/gilw_settings_message_isempty"
+            android:defaultValue=""
+            android:inputType="number" />
+	<EditTextPreference
+            android:key="gilw_height"
+            android:title="@string/gilw_settings_height"
+            android:persistent="true"
+            android:hint="@string/gilw_settings_message_isempty"
+            android:defaultValue=""
+            android:inputType="number" />
+    <ListPreference
+            android:key="gilw_safe"
+            android:title="@string/gilw_settings_safe"
+            android:defaultValue="moderate"
+            android:entries="@array/gilw_settings_list_safe"
+            android:entryValues="@array/gilw_settings_list_safe_value" />
+</PreferenceScreen>

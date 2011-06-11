@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="jp.mokejp.gilw"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="7" />
+	<uses-feature android:name="android.software.live_wallpaper" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<application
+      	  android:label="@string/app_name"
+     	   android:icon="@drawable/icon">
+    	<service
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER" 
+            android:name="GoogleImageWallpaper">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data android:name="android.service.wallpaper" android:resource="@xml/gilw" />
+        </service>
+        <activity
+            android:label="@string/gilw_settings"
+            android:name="GoogleImageWallpaperSettings"
+            android:theme="@android:style/Theme.Light.WallpaperSettings"
+            android:exported="true">
+        </activity>
+    </application>
+</manifest>

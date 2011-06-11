@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Internet Wallpaper</string>
+    <string name="gilw_settings">設定</string>
+    <string name="gilw_settings_keyword">検索キーワード</string>
+    <string name="gilw_settings_width">画像の幅</string>
+    <string name="gilw_settings_height">画像の高さ</string>
+    <string name="gilw_settings_safe">セーフサーチ</string>
+    <string-array name="gilw_settings_list_safe">
+        <item>"オフ"</item>
+        <item>"中(推奨)"</item>
+        <item>"高"</item>
+    </string-array>
+    <string-array name="gilw_settings_list_safe_value">
+        <item>"off"</item>
+        <item>"moderate"</item>
+        <item>"active"</item>
+    </string-array>
+    <string name="gilw_settings_default_auto">オート</string>
+    <string name="gilw_settings_default_keyword">風景</string>
+    <string name="gilw_settings_message_isempty">入力してください</string>
+    <string name="gilw_message_isempty">画像が見つかりません！</string>
+</resources>
