@@ -6,6 +6,7 @@
     <string name="gilw_settings_width">画像の幅</string>
     <string name="gilw_settings_height">画像の高さ</string>
     <string name="gilw_settings_safe">セーフサーチ</string>
+    <string name="gilw_settings_refreshinterval">更新時間(分)</string>
     <string-array name="gilw_settings_list_safe">
         <item>"オフ"</item>
         <item>"中(推奨)"</item>
@@ -17,7 +18,9 @@
         <item>"active"</item>
     </string-array>
     <string name="gilw_settings_default_auto">オート</string>
-    <string name="gilw_settings_default_keyword">風景</string>
+    <string name="gilw_settings_default_keyword">wallpaper</string>
+    <string name="gilw_settings_default_refreshinterval">なし</string>
     <string name="gilw_settings_message_isempty">入力してください</string>
-    <string name="gilw_message_isempty">画像が見つかりません！</string>
+    <string name="gilw_message_loading">画像取得中...</string>
+    <string name="gilw_message_notfound">画像が見つかりません!</string>
 </resources>

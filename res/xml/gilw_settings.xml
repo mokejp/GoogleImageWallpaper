@@ -7,21 +7,21 @@
             android:key="gilw_keyword"
             android:title="@string/gilw_settings_keyword"
             android:persistent="true"
-            android:hint="@string/gilw_settings_message_isempty"
+            android:hint="@string/gilw_settings_default_keyword"
             android:defaultValue="@string/gilw_settings_default_keyword"
             android:inputType="textAutoComplete" />
     <EditTextPreference
             android:key="gilw_width"
             android:title="@string/gilw_settings_width"
             android:persistent="true"
-            android:hint="@string/gilw_settings_message_isempty"
+            android:hint="@string/gilw_settings_default_auto"
             android:defaultValue=""
             android:inputType="number" />
 	<EditTextPreference
             android:key="gilw_height"
             android:title="@string/gilw_settings_height"
             android:persistent="true"
-            android:hint="@string/gilw_settings_message_isempty"
+            android:hint="@string/gilw_settings_default_auto"
             android:defaultValue=""
             android:inputType="number" />
     <ListPreference
@@ -30,4 +30,12 @@
             android:defaultValue="moderate"
             android:entries="@array/gilw_settings_list_safe"
             android:entryValues="@array/gilw_settings_list_safe_value" />
+	<EditTextPreference
+            android:key="gilw_refreshinterval"
+            android:title="@string/gilw_settings_refreshinterval"
+            android:persistent="true"
+            android:hint="@string/gilw_settings_default_refreshinterval"
+            android:defaultValue=""
+            android:maxLength="4"
+            android:inputType="number" />
 </PreferenceScreen>

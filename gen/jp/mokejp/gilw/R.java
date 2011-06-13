@@ -23,13 +23,17 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f050000;
-        public static final int gilw_message_isempty=0x7f050009;
+        public static final int gilw_message_isempty=0x7f05000a;
+        public static final int gilw_message_loading=0x7f05000b;
+        public static final int gilw_message_notfound=0x7f05000c;
         public static final int gilw_settings=0x7f050001;
-        public static final int gilw_settings_default_auto=0x7f050006;
-        public static final int gilw_settings_default_keyword=0x7f050007;
+        public static final int gilw_settings_default_auto=0x7f050007;
+        public static final int gilw_settings_default_keyword=0x7f050008;
+        public static final int gilw_settings_default_refreshinterval=0x7f050009;
         public static final int gilw_settings_height=0x7f050004;
         public static final int gilw_settings_keyword=0x7f050002;
-        public static final int gilw_settings_message_isempty=0x7f050008;
+        public static final int gilw_settings_message_isempty=0x7f05000d;
+        public static final int gilw_settings_refreshinterval=0x7f050006;
         public static final int gilw_settings_safe=0x7f050005;
         public static final int gilw_settings_width=0x7f050003;
     }

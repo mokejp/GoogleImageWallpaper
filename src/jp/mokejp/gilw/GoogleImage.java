@@ -27,7 +27,8 @@ import android.net.Uri;
 public class GoogleImage {
 	private static final String QUERY_URL = "https://ajax.googleapis.com/ajax/services/search/images?v=1.0&rsz=8";
 	
-	public ArrayList<GoogleImageResult> requestImageSearch(String key, int width, int height, String safe, int index) {
+	
+	public ArrayList<GoogleImageResult> requestImageSearch(String key, int width, int height, String safe, int index) throws GoogleImageException {
 		ArrayList<GoogleImageResult> listData = new ArrayList<GoogleImageResult>();
 
 		String encodeKey = Uri.encode(key);
@@ -56,9 +57,6 @@ public class GoogleImage {
 					
 				} else {
 					JSONObject jsonObjData = jsonObj.getJSONObject("responseData");
-				//	JSONObject cursorObjData = jsonObjData.getJSONObject("cursor");
-				//	int currentPageIndex = cursorObjData.getInt("currentPageIndex");
-				//	JSONArray pagesArray = cursorObjData.getJSONArray("pages");
 					JSONArray jsonObjResultArray = jsonObjData
 						.getJSONArray("results");
 					for (int i = 0; i < jsonObjResultArray.length(); i++) {
@@ -68,24 +66,19 @@ public class GoogleImage {
 						GoogleImageResult result = new GoogleImageResult(jsonObjResult.getString("title"), jsonObjResult.getString("unescapedUrl"));
 						listData.add(result);
 					}
-					/*
-					if (currentPageIndex == 0) {
-						
-						for (int i = 1; pagesArray.length() > 1 && i < pagesArray.length(); i++) {
-							listData.addAll(requestImageSearch(key, width, height, i));
-						}
-					}
-					*/
 				}
 
 			}
 
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
+			throw new GoogleImageException();
 		} catch (IOException e) {
 			e.printStackTrace();
+			throw new GoogleImageException();
 		} catch (JSONException e) {
 			e.printStackTrace();
+			throw new GoogleImageException();
 		}
 
 		return listData;

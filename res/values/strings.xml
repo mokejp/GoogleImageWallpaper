@@ -6,6 +6,7 @@
     <string name="gilw_settings_width">Image width</string>
     <string name="gilw_settings_height">Image height</string>
     <string name="gilw_settings_safe">SafeSearch</string>
+    <string name="gilw_settings_refreshinterval">Refresh interval(min)</string>
     <string-array name="gilw_settings_list_safe">
         <item>"Off"</item>
         <item>"Moderate(recommended)"</item>
@@ -17,7 +18,9 @@
         <item>"active"</item>
     </string-array>
     <string name="gilw_settings_default_auto">Auto</string>
-    <string name="gilw_settings_default_keyword">landscape</string>
-    <string name="gilw_settings_message_isempty"></string>
+    <string name="gilw_settings_default_keyword">wallpaper</string>
+    <string name="gilw_settings_default_refreshinterval">None</string>
     <string name="gilw_message_isempty">Not found !</string>
+    <string name="gilw_message_loading">Searching Image...</string>
+    <string name="gilw_message_notfound">Not found!</string>
 </resources>
